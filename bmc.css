@@ -1,0 +1,112 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  display: grid;
+  grid-column-gap: 10vh;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(auto,1000);
+  background: #000707;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+.container span{
+  display: inline-block;
+  background: #ffffff;
+  color: #000e0f;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+
+
+
+.container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: auto auto auto;
+  
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  /* grid-gap: 1rem 1rem; */
+  
+  justify-items: stretch; /* start, end, center, stretch*/
+  align-items: stretch; /* start, end, center, stretch */
+  /* place-items: stretch stretch */
+  
+  justify-content: stretch; /* start, end, center, stretch, space-around, space-between, space-evenly */
+  align-content: stretch; /* start, end, center, stretch, space-around, space-between, space-evenly */
+  /* place-content: stretch stretch; */
+  
+}
+
+
+.key_partners { grid-area: kp; }
+.key_activities { grid-area: ka; }
+.key_resources { grid-area: kr; }
+.value_propositions { grid-area: vp; }
+.customer_relationships { grid-area: cr; }
+.channels { grid-area: ch; }
+.customer_segments { grid-area: cs; }
+.cost_structure { grid-area: ct; }
+.revenue_streams { grid-area: rs; }
+
+.container{
+  grid-template-areas:
+   "kp kp ka ka vp vp cr cr cs cs"
+   "kp kp kr kr vp vp ch ch cs cs"
+   "ct ct ct ct ct rs rs rs rs rs";
+}
+
+
+
+/*
+.key_partners {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+.key_activities {
+  grid-row: 1 / 2;
+  grid-column: 3 / 5;
+}
+.key_resources {
+  grid-row: 2 / 3;
+  grid-column: 3 / 5;
+}
+.value_propositions {
+  grid-row: span 2;
+  grid-column: 5 / 7;
+}
+.customer_relationships {
+  grid-area: 1 / 7 / 2 / 9;
+}
+.channels {
+  grid-area: 2 / 7 / 3 / 9;
+}
+.customer_segments {
+  grid-area: 1 / 9 / 3 / 11;
+}
+.cost_structure {
+  grid-row: 3 / 4;
+  grid-column: span 5;
+  justify-self: left;
+}
+.revenue_streams {
+  grid-row: 3  / 4;
+  grid-column: span 5;
+  align-self: center;
+}
+*/
+
+
+
+

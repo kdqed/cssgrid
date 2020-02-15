@@ -1,0 +1,106 @@
+:root{
+  --bg: #000e0f;
+  --theme: #0060a0
+  --fg: #ffffff;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  display: grid;
+  grid-column-gap: 10vh;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(auto,1000);
+  background: #000707;
+  color: #ffffff;
+  padding: 5vh;
+  margin: 0;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+.acenter{
+  text-align: center;
+}
+a {
+  color: #ffffff;
+}
+div{
+  display: none;
+  grid-area: 1 / 2 / 1001 / 3;
+  background: #000e0f;
+  height: 90vh;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  overflow-y: scroll;      
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #000e0f; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #0060a0;
+  border-radius: 5rem; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+
+input:checked + div {
+  display: block;
+}
+input[type=radio]{
+  display: inline-block;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0.2rem;
+  background: #ffffff;
+  border: 0.3rem solid #000e0f;
+  border-radius: 5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: none;
+}
+input[type=radio]:checked{
+  background: #0060a0;
+  border: 0.3rem solid #0060a0; 
+}
+input[type=radio]:hover{
+  cursor: pointer;
+  cursor: hand;
+}
+
+
+h1,h2,h3,h4{
+  font-weight: 400;
+  margin: 0.75rem 0;
+}
+h2,h4{
+  color: #0060a0;
+}
+h1{
+  letter-spacing: 1rem;
+}
+h3,h4,p{
+  margin: 0;
+}
+code{
+  background: #ffffff;
+  color: #0060a0;
+  display: inline-block;
+  font-size: 80%;
+  padding: 1% 2%;
+  border-radius: 0.5rem;
+}
+div>img{
+  border-radius: 0.2rem;
+  max-width: 50vw;
+  height: auto; 
+}
