@@ -1,7 +1,7 @@
 :root{
-  --bg: #000e0f;
+  --fg: #000e0f;
   --theme: #0060a0
-  --fg: #ffffff;
+  --bg: #ffffff;
 }
 *{
   box-sizing: border-box;
@@ -11,8 +11,8 @@ body{
   grid-column-gap: 10vh;
   grid-template-columns: auto 1fr;
   grid-template-rows: repeat(auto,1000);
-  background: #000707;
-  color: #ffffff;
+  color: #000707;
+  background: #dbf1ff;
   padding: 5vh;
   margin: 0;
   font-size: 2rem;
@@ -22,12 +22,13 @@ body{
   text-align: center;
 }
 a {
-  color: #ffffff;
+  color: #000707;
 }
 div{
   display: none;
   grid-area: 1 / 2 / 1001 / 3;
-  background: #000e0f;
+  background: #ffffff;
+  color: #000e0f;
   height: 90vh;
   padding: 2rem 4rem;
   border-radius: 1rem;
@@ -38,7 +39,7 @@ div{
 }
 
 ::-webkit-scrollbar-track {
-  background: #000e0f; 
+  background: #ffffff; 
 }
  
 ::-webkit-scrollbar-thumb {
@@ -59,8 +60,8 @@ input[type=radio]{
   height: 1.5rem;
   width: 1.5rem;
   padding: 0.2rem;
-  background: #ffffff;
-  border: 0.3rem solid #000e0f;
+  background: #000e0f;
+  border: 0.3rem solid #dbf1ff;
   border-radius: 5rem;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -92,8 +93,8 @@ h3,h4,p{
   margin: 0;
 }
 code{
-  background: #ffffff;
-  color: #0060a0;
+  background: #000e0f;
+  color: #ffffff;
   display: inline-block;
   font-size: 80%;
   padding: 1% 2%;

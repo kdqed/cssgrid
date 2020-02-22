@@ -30,6 +30,7 @@ body{
   width: 100vw;
   height: 100vh;
   padding: 1rem;
+  
   grid-template-columns: repeat(10,1fr);
   grid-template-rows: auto auto auto;
   
@@ -37,7 +38,7 @@ body{
   grid-row-gap: 1rem;
   /* grid-gap: 1rem 1rem; */
   
-  justify-items: stretch; /* start, end, center, stretch*/
+  justify-items: start; /* start, end, center, stretch*/
   align-items: stretch; /* start, end, center, stretch */
   /* place-items: stretch stretch */
   
